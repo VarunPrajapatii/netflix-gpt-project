@@ -2,7 +2,7 @@
 
 - Create React App
 - Configured TailwindCSS
-- 
+- Installed react-router-dom
 
 
 
@@ -21,7 +21,6 @@
 - Netflix GPT
     - Search Bar
     - Movie Suggestions (according to search bar)
-    
 
 
 
