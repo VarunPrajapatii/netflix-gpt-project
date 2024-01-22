@@ -2,7 +2,21 @@
 
 - Create React App
 - Configured TailwindCSS
-- Installed react-router-dom
+- Header
+- Routing of App
+- Login Form
+- SignUp form
+- Form Validation
+- useRef Hook
+- Firebase Setup
+- Deployed our app to production
+- Create Signup user Account
+- Implement Sign In user API
+- Created redux storewith userSlice
+- Implemented Sign Out
+- Updated Profile
+
+
 
 
 
