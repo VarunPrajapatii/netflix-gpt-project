@@ -22,7 +22,14 @@
 - Register TMDB API and create an app and got access token
 - Made a custom hook useNowPlayingMovies in hooks folder
 - Get data from TMDB now playing movie list API
-- 
+- Created custom hook for Now Playing Movies
+- Created movieSlice
+- Updated store with movies Data
+- Planning for MainContainer & Secondary Container
+- Fetch data for Trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Youtube video and made it autoplay and mute
+- Tailwind Classes to make Main Container look awesome
 
 
 
