@@ -17,7 +17,12 @@
 - Updated Profile
 - Bug Fix: Sign Up user displayName and profile picture update
 - Bug Fix: If the user is not logged in Redirect /browse page to Login page and vice-versa
-
+- Unsibscribed to the onAuthStateChange callback
+- Add hard coded values to constants file
+- Register TMDB API and create an app and got access token
+- Made a custom hook useNowPlayingMovies in hooks folder
+- Get data from TMDB now playing movie list API
+- 
 
 
 
