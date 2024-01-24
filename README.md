@@ -30,6 +30,8 @@
 - Update Store with Trailer Video Data
 - Embedded the Youtube video and made it autoplay and mute
 - Tailwind Classes to make Main Container look awesome
+- Made Secondary Container with Movie List and improved css
+- Made Movie card
 
 
 
