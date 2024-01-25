@@ -32,6 +32,10 @@
 - Tailwind Classes to make Main Container look awesome
 - Made Secondary Container with Movie List and improved css
 - Made Movie card
+- Build Movie List Now Playing with custom hook useNowPlayingMovies
+- Build Movie List Popular with custom hook usePopularMovies
+- Build Movie List Top Rated with custom hook useTopRatedMovies
+- Build Movie List Upcoming with custom hook useUpcomingMovies
 
 
 
