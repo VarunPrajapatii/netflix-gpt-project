@@ -39,8 +39,10 @@
 - Build Movie List Popular with custom hook usePopularMovies
 - Build Movie List Top Rated with custom hook useTopRatedMovies
 - Build Movie List Upcoming with custom hook useUpcomingMovies
-- GPR Search Feature
-- 
+- GPT Search Page
+- GPT Search Bar
+- Multi Language Feature in APP
+
 
 
 
