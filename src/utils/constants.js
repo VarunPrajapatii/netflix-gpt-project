@@ -19,3 +19,7 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "spanish", name: "Spanish" },
 ];
+
+
+//Keep this key secret, as if it got stolen then it can just trigger your billing cycle huge... Its a big Problem.
+export const OPENAI_KEY = "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";    

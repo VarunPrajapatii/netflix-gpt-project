@@ -12,7 +12,7 @@
 - Deployed our app to production
 - Create Signup user Account
 - Implement Sign In user API
-- Created redux storewith userSlice
+- Created redux store with userSlice
 - Implemented Sign Out
 - Updated Profile
 - Bug Fix: Sign Up user displayName and profile picture update
@@ -42,6 +42,9 @@
 - GPT Search Page
 - GPT Search Bar
 - Multi Language Feature in APP
+- Installed openai
+- Got OpenAI key
+- Made search bar search Query and get results from OpenAI 
 
 
 
