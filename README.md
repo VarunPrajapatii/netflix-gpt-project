@@ -44,7 +44,11 @@
 - Multi Language Feature in APP
 - Installed openai
 - Got OpenAI key
-- Made search bar search Query and get results from OpenAI 
+- Made search bar search Query and get results from OpenAI
+- Made API give 5 movies list from user search query
+- Got those 5 movies from TMDB and show these movies name and poster
+- Implemented Memoization
+- 
 
 
 
