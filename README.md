@@ -77,16 +77,7 @@
 
 
 
-{
-  /**
-   * Main Container
-   *  - VideoBackground
-   *  - VideoTitle
-   * SecondaryContainer
-   *  - MovieList * n
-   *    - cards * n
-   */
-}
+
 
 
 
