@@ -11,7 +11,6 @@ const MovieList = ({title, movies}) => {
           {movies?.map(movie => <MovieCard key={movie.id} posterPath={movie.poster_path} /> )}          
         </div>
       </div>
-        <button className='z-30 text-2xl bg-white text-black '>More</button>
     </div>
   );
 };

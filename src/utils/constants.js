@@ -6,7 +6,7 @@ export const API_OPTIONS = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YWZlMGFkNzlhNGVjN2I1YWExYzk5OTlkZTRmMTAwZCIsInN1YiI6IjY1YjAwODllODQ4ZWI5MDBhYzlkMGI2YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.oEtXTUARbLnwTvZxdzur1RQZV8m_Dp3cZ2lIEMe-LFo'
+      Authorization: 'Bearer ' + process.env.REACT_APP_TMDB_KEY
     }
 };
 
@@ -22,4 +22,4 @@ export const SUPPORTED_LANGUAGES = [
 
 
 //Keep this key secret, as if it got stolen then it can just trigger your billing cycle huge... Its a big Problem.
-export const OPENAI_KEY = "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";    
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY ;    

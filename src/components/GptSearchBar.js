@@ -1,12 +1,25 @@
 import React, { useRef } from 'react'
 import lang from '../utils/languageConstants';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import openai from '../utils/openai';
+import { API_OPTIONS } from '../utils/constants';
+import { addGptMovieResult } from '../utils/gptSlice';
 
 const GptSearchBar = () => {
-
+  const dispatch = useDispatch();
   const langKey = useSelector((store) => store.config.lang);
   const searchText = useRef(null);
+
+  //Search movie in TMDB
+  const searchMovieTBDB = async (movie) => {
+    const data = await fetch('https://api.themoviedb.org/3/search/movie?query='+ 
+      movie +
+      '&include_adult=false&language=en-US&page=1', API_OPTIONS
+    );
+    const json = await data.json();
+
+    return json.results;
+  }
 
   const handleGptSearchClick = async () => {
     //Make an API call to GPT API and get Movie Results
@@ -19,7 +32,23 @@ const GptSearchBar = () => {
       messages: [{ role: 'user', content: gptQuery }],
       model: 'gpt-3.5-turbo',
     });
-    console.log(gptResults.choices)
+    if(!gptResults.choices) {
+      // TODO: Write Error Handling
+    }
+
+    //Andaz Apna Apna, Chupke Chupke, Padosan, Hera Pheri, Chalti Ka Naam Gaadi
+    const gptMovies = gptResults.choices?.[0]?.message?.content.split(",");
+    //["Andaz Apna Apna", " Chupke Chupke", " Padosan", " Hera Pheri", " Chalti Ka Naam Gaadi"]
+    
+    //For each Movie I will search TMDB API
+
+    const promiseArray = gptMovies.map(movie => searchMovieTBDB(movie));
+    //[Promise, Promise, Promise, Promise, Promise]
+
+    const tmdbResults = await Promise.all(promiseArray);
+
+    dispatch(addGptMovieResult({movieNames: gptMovies, movieResults: tmdbResults}));
+
   };
 
   return (
