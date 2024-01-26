@@ -51,6 +51,7 @@
 - Memoization
 - Added .env file to gitignore
 - Made WebSite Responsive
+- Completed Phase 1
 
 
 
