@@ -77,18 +77,6 @@
 
 
 
-{
-  /**
-   * Main Container
-   *  - VideoBackground
-   *  - VideoTitle
-   * SecondaryContainer
-   *  - MovieList * n
-   *    - cards * n
-   */
-}
-
-
 
 # Getting Started with Create React App
 
